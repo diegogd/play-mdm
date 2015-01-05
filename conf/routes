@@ -3,7 +3,13 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index
+# GET        /                    controllers.Application.index
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET        /assets/*file        controllers.Assets.at(path="/public", file)
+
+# Routes defined in Apple documentation
+GET        /                    controllers.MDM.index
+GET        /CA                  controllers.MDM.CA
+GET        /enroll              controllers.MDM.enroll
+POST       /profile             controllers.MDM.profile

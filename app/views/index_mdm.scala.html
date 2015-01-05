@@ -1,0 +1,13 @@
+<style>
+body { margin:40px 40px;font-family:Helvetica;}
+h1 { font-size:80px; }
+p { font-size:60px; }
+a { text-decoration:none; }
+</style>
+<h1 >My Play MDM</h1>
+<p>If you had to accept the certificate accessing this page, you should
+    download the <a href="@routes.MDM.CA()">root certificate</a> and install it so it becomes
+    trusted.
+<p>We are using a self-signed
+    certificate here, for production it should be issued by a known CA.
+<p>After that, go ahead and <a href="@routes.MDM.enroll()">enroll</a>
